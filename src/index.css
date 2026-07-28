@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Outfit&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --header-height: 2.2rem;
+}
+[data-bs-theme="dark"] {
+    --bs-body-bg: #101010;
+    --bs-body-color: #ffffff;
+}
+[data-bs-theme="light"] {
+    --bs-body-bg: #ffffff;
+    --bs-body-color: #101010;
+}
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+.custom-hero-section {
+  margin-top: var(--header-height);
+  min-height: calc(100vh - var(--header-height));
+}
+.custom-navbar {
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  z-index: 9999;
+  transition: all 0.3s ease;
+
+  .brand {
+    font-family: "Major Mono Display", sans-serif;
+    font-size: 1.6rem;
+  }
+}
+.navbar .nav-link:hover {
+  color: currentColor !important;
+}
+header {
+  padding-top: 80px;
+}
+.custom-hero-home {
+  height: 100%;
+}
+.pricing-subtitle{
+    display:inline-block;
+    background:#f3f4f6;
+    color:#6c757d;
+    padding:.45rem 1rem;
+    border-radius:999px; 
+    font-size:.8rem;
+    font-weight:600;
+    letter-spacing:.08rem;
+}
+
+.pricing-description{
+    max-width:600px;
+}
+
+.pricing-card{
+    position:relative;
+    border:none;
+    border-radius:22px;
+    transition:.35s;
+    overflow:hidden;
+}
+
+.pricing-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 60px rgba(0,0,0,.12)!important;
+}
+
+.pricing-active{
+    border:3px solid #0d6efd !important;
+    transform:scale(1.01);
+}
+
+.popular-badge {
+    position:absolute;
+    top:18px;
+    right:18px;
+    background:#0d6efd;
+    color:#fff;
+    font-size:.72rem;
+    font-weight:700;
+    padding:.45rem .9rem;
+    border-radius:999px;
+    display:flex;
+    align-items:center;
+}
+
+.pricing-card .btn{
+    padding:.9rem;
+    font-weight:600;
+}
+
+.pricing-card hr{
+    opacity:.1;
+}
+
+.pricing-card ul{
+    margin:0;
+    padding:0;
+}
+
+.pricing-card li{
+    font-size:.95rem;
+}
+
+@media(max-width:991px){
+
+    .pricing-active{
+        transform:none;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .display-4{
+        font-size:2.3rem;
+    }
+
+    .pricing-card {
+      border: 2px solid currentColor;
+      border-radius:18px;
+    }
+
+}
