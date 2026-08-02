@@ -20,8 +20,10 @@ const HomeScreen = () => {
               </div>
             </div>
             <div className="col-lg-6 order-1 order-lg-2 text-center mt-lg-0 mb-3">
-              <div className="mx-auto rounded overflow-hidden" style={{width: "300px", height: "300px",}}>
-                <img src="https://i.pravatar.cc/400" alt="Profile" className="w-100 h-100" style={{ objectFit: "cover", filter: "grayscale(100%) contrast(110%)"}}/>
+              <div className="profile-placeholder mx-auto rounded overflow-hidden" style={{width: "300px", height: "300px",}}>
+                <img src="#" alt="Profile" className="w-100 h-100" style={{ objectFit: "cover", filter: "grayscale(100%) contrast(110%)" }} onError={(e) => {
+    e.target.style.display = "none";
+  }}/>
               </div>
             </div>
           </div>

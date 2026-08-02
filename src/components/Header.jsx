@@ -1,8 +1,9 @@
 import React, { useRef, useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 
 const Header = () => {
-    const navRef = useRef(null);
-
+  const { pathname } = useLocation()
+  const navRef = useRef(null)
   useEffect(() => {
     const updateHeight = () => {
       document.documentElement.style.setProperty(
@@ -24,19 +25,19 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link" href="/">Home</a>
+              <Link className={`nav-link ${pathname==="/"? "active": ""}`} to="/">Home</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/projects">Projects</a>
+              <Link className={`nav-link ${pathname==="/projects"? "active": ""}`} to="/projects">Projects</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/pricing">Pricing</a>
+              <Link className={`nav-link ${pathname==="/pricing"? "active": ""}`} to="/pricing">Pricing</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/contact">Contact</a>
+              <Link className={`nav-link ${pathname==="/contact"? "active": ""}`} to="/contact">Contact</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/about">About</a>
+              <Link className={`nav-link ${pathname==="/about"? "active": ""}`} to="/about">About</Link>
             </li>
           </ul>
         </div>

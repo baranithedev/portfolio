@@ -1,14 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import {
-  FaGithub,
-  FaInstagram,
-  FaTelegramPlane,
-  FaLinkedin,
-} from "react-icons/fa";
+import { NavLink } from "react-router-dom";
+import { FaGithub, FaInstagram, FaTelegramPlane, FaLinkedin } from "react-icons/fa";
+import { useTheme } from "../contexts/ThemeContext";
 
 const Footer = () => {
-  const year = new Date().getFullYear();
+  const year = new Date().getFullYear()
+  const { invertTheme } = useTheme()
 
   return (
     <footer className="py-4">
@@ -25,19 +22,19 @@ const Footer = () => {
             <h6 className="fw-semibold mb-3">Navigation</h6>
             <ul className="nav flex-column">
               <li className="nav-item">
-                <Link to="/" className="nav-link px-0 text-secondary">
+                <NavLink to="/" className={({ isActive }) => `nav-link px-0 ${isActive ? `text-${invertTheme}` : "text-secondary"}`}>
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link to="/about" className="nav-link px-0 text-secondary">
-                  About
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/contact" className="nav-link px-0 text-secondary">
+                <NavLink to="/contact" className={({ isActive }) => `nav-link px-0 ${isActive ? `text-${invertTheme}` : "text-secondary"}`}>
                   Contact
-                </Link>
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/about" className={({ isActive }) => `nav-link px-0 ${isActive ? `text-${invertTheme}` : "text-secondary"}`}>
+                  About
+                </NavLink>
               </li>
             </ul>
           </div>

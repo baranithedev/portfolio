@@ -18,7 +18,6 @@
 body {
   font-family: "Outfit", sans-serif;
 }
-
 .custom-hero-section {
   margin-top: var(--header-height);
   min-height: calc(100vh - var(--header-height));
@@ -53,11 +52,9 @@ header {
     font-weight:600;
     letter-spacing:.08rem;
 }
-
 .pricing-description{
     max-width:600px;
 }
-
 .pricing-card{
     position:relative;
     border:none;
@@ -65,17 +62,14 @@ header {
     transition:.35s;
     overflow:hidden;
 }
-
 .pricing-card:hover{
     transform:translateY(-10px);
     box-shadow:0 25px 60px rgba(0,0,0,.12)!important;
 }
-
 .pricing-active{
     border:3px solid #0d6efd !important;
     transform:scale(1.01);
 }
-
 .popular-badge {
     position:absolute;
     top:18px;
@@ -89,42 +83,54 @@ header {
     display:flex;
     align-items:center;
 }
-
 .pricing-card .btn{
     padding:.9rem;
     font-weight:600;
 }
-
 .pricing-card hr{
     opacity:.1;
 }
-
 .pricing-card ul{
     margin:0;
     padding:0;
 }
-
 .pricing-card li{
     font-size:.95rem;
 }
-
 @media(max-width:991px){
-
     .pricing-active{
         transform:none;
     }
-
 }
 
 @media(max-width:576px){
-
     .display-4{
         font-size:2.3rem;
     }
-
     .pricing-card {
       border: 2px solid currentColor;
       border-radius:18px;
     }
-
+}
+.profile-placeholder {
+  width: 300px;
+  height: 300px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    #1d1d1d 25%,
+    #303030 50%,
+    #1d1d1d 75%
+  );
+  background-size: 200% 100%;
+  animation: skeleton 1.5s infinite linear;
+}
+@keyframes skeleton {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
 }
