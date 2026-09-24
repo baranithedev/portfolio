@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import Header from './components/Header'
 import HomeScreen from './screens/HomeScreen'
 import AboutScreen from './screens/AboutScreen'
 import ContactScreen from './screens/ContactScreen'
-import NotFound from './screens/NotFound'
 import PricingScreen from './screens/PricingScreen'
+
+import NotFound from './screens/NotFound'
 
 const App = () => {
   return (
@@ -18,7 +17,6 @@ const App = () => {
         <Route path='/pricing' element={<PricingScreen/>}/>
         <Route path='*' element={<NotFound/>}/>
       </Routes>
-      <Header/>
     </BrowserRouter>
   )
 }

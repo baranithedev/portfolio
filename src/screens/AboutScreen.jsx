@@ -1,5 +1,4 @@
-import React from "react";
-import HeroSection from "../components/HeroSection";
+import HeroSection from "../layouts/BaseLayout";
 
 const AboutScreen = () => {
   const journey = [
@@ -14,7 +13,7 @@ const AboutScreen = () => {
     <HeroSection>
     <main className="container">
       <div className="text-start mb-5">
-        <span className="badge text-bg-primary px-3 py-2">
+        <span className="badge text-bg-info px-3 py-2">
           About Me
         </span>
         <h1 className="display-4 fw-bold mt-3">

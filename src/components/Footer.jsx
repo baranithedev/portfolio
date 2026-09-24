@@ -1,4 +1,3 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 import { FaGithub, FaInstagram, FaTelegramPlane, FaLinkedin } from "react-icons/fa";
 import { useTheme } from "../contexts/ThemeContext";

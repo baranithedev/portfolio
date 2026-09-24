@@ -1,5 +1,6 @@
-import React, { useRef, useEffect } from 'react'
+import { useRef, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { FaLocationDot } from 'react-icons/fa6'
 
 const Header = () => {
   const { pathname } = useLocation()
@@ -12,13 +13,16 @@ const Header = () => {
       )
     }
     updateHeight()
-    window.addEventListener("resize", updateHeight);
-    return () => window.removeEventListener("resize", updateHeight);
-  }, []);
+    window.addEventListener("resize", updateHeight)
+    return () => window.removeEventListener("resize", updateHeight)
+  }, [])
   return (
     <nav ref={navRef} className="navbar navbar-expand-lg fixed-top custom-navbar">
       <div className="container">
-        <a className="navbar-brand fw-bold brand" href="/">Barani.Dev</a>
+        <Link className="navbar-brand fw-bold brand" to="/">
+          <h1>BaraniDharan.Me</h1>
+          <small>Developer</small>
+        </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span className="navbar-toggler-icon"></span>
         </button>

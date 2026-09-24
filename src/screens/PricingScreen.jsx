@@ -1,7 +1,6 @@
-import React from "react";
-import { BsCheckCircleFill, BsArrowRight, BsStars } from "react-icons/bs";
-import HeroSection from './../components/HeroSection'
-import { useTheme } from "../contexts/ThemeContext";
+import { BsCheckCircleFill, BsArrowRight, BsStars } from "react-icons/bs"
+import HeroSection from './../layouts/BaseLayout'
+import { useTheme } from "../contexts/ThemeContext"
 import plans from "./../assests/data/plans"
 
 const PricingScreen = () => {

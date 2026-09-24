@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Notable&family=Major+Mono+Display&family=Outfit&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 :root {
-  --header-height: 2.2rem;
+  --header-height: 4.8rem;
 }
 [data-bs-theme="dark"] {
     --bs-body-bg: #101010;
@@ -23,24 +23,33 @@ body {
   min-height: calc(100vh - var(--header-height));
 }
 .custom-navbar {
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   z-index: 9999;
   transition: all 0.3s ease;
 
   .brand {
-    font-family: "Major Mono Display", sans-serif;
-    font-size: 1.6rem;
+    text-transform: capitalize;
+    line-height: 0.96;
+  }
+
+  .brand h1 {
+    font-family: "Notable", sans-serif;
+    font-size: 1.45rem;
+  }
+  .brand small {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 0.85rem;
+    letter-spacing: 1.2px;
+    flex-direction: row;
+    column-gap: 0.6rem;
+
   }
 }
 .navbar .nav-link:hover {
   color: currentColor !important;
-}
-header {
-  padding-top: 80px;
-}
-.custom-hero-home {
-  height: 100%;
 }
 .pricing-subtitle{
     display:inline-block;
@@ -102,7 +111,6 @@ header {
         transform:none;
     }
 }
-
 @media(max-width:576px){
     .display-4{
         font-size:2.3rem;
@@ -113,8 +121,8 @@ header {
     }
 }
 .profile-placeholder {
-  width: 300px;
-  height: 300px;
+  width: 336px;
+  height: 336px;
   border-radius: 16px;
   overflow: hidden;
   background: linear-gradient(
@@ -133,4 +141,8 @@ header {
   to {
     background-position: -200% 0;
   }
+}
+.custom-offset-btn {
+  outline-offset: 4px !important;
+  box-shadow: none !important;
 }

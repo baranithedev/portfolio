@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom"
-import HeroSection from "../components/HeroSection";
+import HeroSection from "../layouts/BaseLayout"
 
 const NotFound = () => {
   return (
     <HeroSection>
-      <main className="d-flex align-items-center justify-content-center" style={{ minHeight: "calc(100vh - 2.2rem)"}}>
+      <main className="d-flex align-items-center justify-content-center" style={{ minHeight: "calc(100vh - (10 * 2.5rem))"}}>
         <div className="text-center p-2">
           <h1 className="display-1 fw-bold" style={{ fontSize: "8rem" }}>404</h1>
           <h2 className="fw-semibold">Page Not Found</h2>
