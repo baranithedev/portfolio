@@ -1,0 +1,221 @@
+{
+  "skills": {
+    "categories": [
+      {
+        "name": "Programming Languages",
+        "items": [
+          {
+            "name": "C",
+            "icon": "SiC",
+            "level": "Learning",
+            "color": "#A8B9CC"
+          },
+          {
+            "name": "C++",
+            "icon": "SiCplusplus",
+            "level": "Learning",
+            "color": "#00599C"
+          },
+          {
+            "name": "JavaScript",
+            "icon": "SiJavascript",
+            "level": "Learning",
+            "color": "#F7DF1E"
+          },
+          {
+            "name": "Python",
+            "icon": "SiPython",
+            "level": "Learning",
+            "color": "#3776AB"
+          }
+        ]
+      },
+      {
+        "name": "Backend Development",
+        "items": [
+          {
+            "name": "Node.js",
+            "icon": "SiNodedotjs",
+            "level": "Learning",
+            "color": "#339933"
+          },
+          {
+            "name": "Express.js",
+            "icon": "SiExpress",
+            "level": "Learning",
+            "color": "#000000"
+          }
+        ]
+      },
+      {
+        "name": "Databases",
+        "items": [
+          {
+            "name": "MongoDB",
+            "icon": "SiMongodb",
+            "level": "Learning",
+            "color": "#47A248"
+          },
+          {
+            "name": "PostgreSQL",
+            "icon": "SiPostgresql",
+            "level": "Learning",
+            "color": "#4169E1"
+          },
+          {
+            "name": "MySQL",
+            "icon": "SiMysql",
+            "level": "Learning",
+            "color": "#4479A1"
+          }
+        ]
+      },
+      {
+        "name": "Tools & Infrastructure",
+        "items": [
+          {
+            "name": "Git",
+            "icon": "SiGit",
+            "level": "Learning",
+            "color": "#F05032"
+          },
+          {
+            "name": "GitHub",
+            "icon": "SiGithub",
+            "level": "Learning",
+            "color": "#181717"
+          },
+          {
+            "name": "Linux",
+            "icon": "SiLinux",
+            "level": "Learning",
+            "color": "#FCC624"
+          }
+        ]
+      }
+    ]
+  },
+  "projects": [
+  ],
+  "services": [
+    {
+      "id": 1,
+      "name": "Backend Development",
+      "description": "Custom server-side applications built around your business requirements.",
+      "features": [
+        "Backend architecture",
+        "Business logic implementation",
+        "Database integration",
+        "Error handling"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "REST API Development",
+      "description": "Well-structured APIs for websites, mobile applications, and third-party integrations.",
+      "features": [
+        "RESTful API design",
+        "CRUD operations",
+        "Authentication",
+        "API documentation"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Database Design",
+      "description": "Database structures designed for data integrity, maintainability, and efficient queries.",
+      "features": [
+        "Schema design",
+        "Data modeling",
+        "Query optimization",
+        "Database integration"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Bug Fixing & Optimization",
+      "description": "Identifying backend issues and improving application reliability and performance.",
+      "features": [
+        "Bug investigation",
+        "API debugging",
+        "Performance improvements",
+        "Code refactoring"
+      ]
+    }
+  ],
+  "pricing": {
+    "currency": "USD",
+    "note": "Indicative starting prices. Final quotes depend on project scope, complexity, and delivery requirements.",
+    "plans": [
+      {
+        "name": "Starter / Basic",
+        "price": "$499",
+        "description": "Ideal for personal portfolios, landing pages, and simple business sites.",
+        "button": "See Details",
+        "primary": false,
+        "features": [
+          "Responsive Mobile Design",
+          "Up to 5 Pages",
+          "Contact Form Integration",
+          "Source Code Ownership",
+          "Basic On-Page SEO"
+        ],
+        "slug": "starter-basic"
+      },
+      {
+        "name": "Professional",
+        "price": "$1,499",
+        "description": "Best choice for growing startups, small businesses, and e-commerce.",
+        "button": "See Details",
+        "primary": true,
+        "features": [
+          "Everything in Starter",
+          "Unlimited Pages / CMS Setup",
+          "Admin Dashboard / Portal",
+          "Third-Party API Integration",
+          "Performance Optimization",
+          "30 Days Priority Support",
+          "Deployment & SSL Included"
+        ],
+        "slug": "professional"
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "description": "Tailored scalable architecture for corporations and advanced web apps.",
+        "button": "See Details",
+        "primary": false,
+        "features": [
+          "Custom Web App / E-commerce",
+          "Cloud Infrastructure (AWS/Vercel)",
+          "Dedicated Long-term Support",
+          "Ongoing Maintenance Retainer",
+          "Advanced Security & Compliance",
+          "Scalable Custom Architecture"
+        ],
+        "slug": "enterprise"
+      }
+    ],
+    "customProjects": {
+      "enabled": true,
+      "title": "Need Something Custom?",
+      "description": "Let's discuss your requirements and define a solution that fits your budget.",
+      "buttonText": "Get a Quote",
+      "buttonLink": "#contact"
+    }
+  },
+  "stats": [
+    {
+      "label": "Projects Completed",
+      "value": 0
+    },
+    {
+      "label": "Years of Experience",
+      "value": 0
+    },
+    {
+      "label": "Technologies Learning",
+      "value": 0
+    }
+  ]
+}

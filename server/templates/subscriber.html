@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify to subscribe</title>
+  </head>
+  <body style="margin:0; padding:0; background-color:#f4f4f4; font-family:Arial,Helvetica,sans-serif;">
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#f4f4f4;">
+    <tr>
+      <td align="center" style="padding:35px 15px;">
+        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="max-width:560px; background-color:#ffffff; border:1px solid #e5e5e5; border-radius:10px;">
+          <tr>
+            <td align="center" style="padding:30px 20px; background-color:#111111; border-radius:10px 10px 0 0;">
+              <h1 style="margin:0; color:#ffffff; font-size:25px; letter-spacing:1px;">
+                BARANI<span style="color:#999999;">DHARAN.ME</span>
+              </h1>
+              <p style="margin:10px 0 0; color:#bbbbbb; font-size:12px; letter-spacing:1px;">EMAIL VERIFICATION</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:35px 30px;">
+              <h2 style="margin:0 0 18px; color:#111111; font-size:25px; line-height:1.4;">Verify your email address</h2>
+              <p style="margin:20px 0; text-align:center; color:#777777; font-size:13px; line-height:1.8;">The verification link valid only
+                <strong>{{minutes}} minutes</strong>.
+              </p>
+              <p style="margin:0 0 16px; color:#555555; font-size:15px; line-height:1.8;">Hello,</p>
+              <p style="margin:0 0 20px; color:#555555; font-size:15px; line-height:1.8;">
+                Thank you for subscribing to BARANIDHARAN.ME. To confirm that you can access this email address, please verify it using the button below.
+              </p>
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin:25px auto;">
+                <tr>
+                  <td align="center" bgcolor="#111111" style="border-radius:6px;">
+                    <a href="{{verification_url}}" target="_blank" style="display:inline-block; padding:15px 30px; color:#ffffff; background-color:#111111; border:1px solid #111111; border-radius:6px; font-size:15px; font-weight:bold; text-decoration:none;">Verify Email Address</a>
+                  </td>
+                </tr>
+              </table>
+              <p style="margin:20px 0; text-align:center; color:#777777; font-size:13px; line-height:1.8;">
+                This verification link expires at
+                <strong>{{timestamp}}</strong>.
+              </p>
+              <div style="padding:16px; background-color:#f7f7f7; border-left:3px solid #111111;">
+                <p style="margin:0; color:#444444; font-size:13px; line-height:1.8;">
+                  <strong>Security notice</strong><br>
+                  If you didn't request this verification, you can safely ignore this email.
+                  Your email address will not be verified through this message alone.
+                </p>
+              </div>
+              <p style="margin:25px 0 8px; color:#777777; font-size:12px; line-height:1.7;">
+                If the button doesn't work, copy and paste
+                the following link into your browser:
+              </p>
+              <p style="margin:0; font-size:12px; line-height:1.7; overflow-wrap:anywhere;">
+                <a href="{{verification_url}}" style="color:#111111; text-decoration:underline;">{{verification_url}}</a>
+              </p>
+            </td>
+            </tr>
+            <tr>
+              <td align="center" style="padding:22px; background-color:#f7f7f7; border-top:1px solid #eeeeee; border-radius:0 0 10px 10px;">
+                <p style="margin:0 0 8px; color:#111111; font-size:13px; font-weight:bold;">BARANIDHARAN.ME</p>
+                <p style="margin:0; color:#888888; font-size:11px; line-height:1.8;">This is an automated verification email.<br>© 2026 BARANIDHARAN.ME. All rights reserved.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+</body>
+</html>
