@@ -8,7 +8,6 @@ Showcase projects, technical skills, pricing plans, resources, and contact infor
 ![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?logo=bootstrap&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?logo=nodedotjs&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
