@@ -60,10 +60,6 @@ export const PrivacyPolicy = () => {
 export const TermsAndConditions = () => {
   return (
     <BaseLayout>
-                <Helmet>
-                  <meta name="robots" content="index, follows" />
-                  <title>Barani Dharan - Terms and Conditions</title>
-                </Helmet>
       <div className="container">
         <header className="border-bottom pb-4 mb-5">
           <h1 className="fw-bold fs-2 mb-2">Terms and Conditions</h1>
